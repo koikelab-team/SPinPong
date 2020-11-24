@@ -1,0 +1,333 @@
+{
+  "app_key": "application.generated.unity.tabletennis.exe",
+  "bindings": {
+    "/actions/buggy": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    },
+    "/actions/default": {
+      "chords": [],
+      "poses": [
+        {
+          "output": "/actions/default/in/pose",
+          "path": "/user/hand/left/pose/raw"
+        },
+        {
+          "output": "/actions/default/in/pose",
+          "path": "/user/hand/right/pose/raw"
+        }
+      ],
+      "haptics": [
+        {
+          "output": "/actions/default/out/haptic",
+          "path": "/user/hand/left/output/haptic"
+        },
+        {
+          "output": "/actions/default/out/haptic",
+          "path": "/user/hand/right/output/haptic"
+        }
+      ],
+      "sources": [
+        {
+          "path": "/user/hand/left/input/trigger",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/interactui"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/grip",
+          "mode": "force_sensor",
+          "parameters": {},
+          "inputs": {
+            "force": {
+              "output": "/actions/default/in/squeeze"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/grip",
+          "mode": "force_sensor",
+          "parameters": {},
+          "inputs": {
+            "force": {
+              "output": "/actions/default/in/squeeze"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trackpad",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/teleport"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trigger",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/interactui"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trackpad",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/teleport"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/thumbstick",
+          "mode": "dpad",
+          "parameters": {
+            "deadzone_pct": "25",
+            "overlap_pct": "30",
+            "sub_mode": "touch"
+          },
+          "inputs": {
+            "north": {
+              "output": "/actions/default/in/teleport"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/thumbstick",
+          "mode": "dpad",
+          "parameters": {
+            "deadzone_pct": "25",
+            "overlap_pct": "30",
+            "sub_mode": "touch"
+          },
+          "inputs": {
+            "north": {
+              "output": "/actions/default/in/teleport"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/thumbstick",
+          "mode": "dpad",
+          "parameters": {
+            "deadzone_pct": "85",
+            "overlap_pct": "0",
+            "sub_mode": "touch"
+          },
+          "inputs": {
+            "east": {
+              "output": "/actions/default/in/snapturnright"
+            },
+            "west": {
+              "output": "/actions/default/in/snapturnleft"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/thumbstick",
+          "mode": "dpad",
+          "parameters": {
+            "deadzone_pct": "85",
+            "overlap_pct": "0",
+            "sub_mode": "touch"
+          },
+          "inputs": {
+            "east": {
+              "output": "/actions/default/in/snapturnright"
+            },
+            "west": {
+              "output": "/actions/default/in/snapturnleft"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/grip",
+          "mode": "grab",
+          "parameters": {
+            "force_hold_threshold": "0.02",
+            "force_release_threshold": "0.01"
+          },
+          "inputs": {
+            "grab": {
+              "output": "/actions/default/in/grabgrip"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/grip",
+          "mode": "grab",
+          "parameters": {
+            "force_hold_threshold": "0.02",
+            "force_release_threshold": "0.01"
+          },
+          "inputs": {
+            "grab": {
+              "output": "/actions/default/in/grabgrip"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/pinch",
+          "mode": "grab",
+          "parameters": {
+            "force_hold_threshold": "0.02",
+            "force_release_threshold": "0.01"
+          },
+          "inputs": {
+            "grab": {
+              "output": "/actions/default/in/grabpinch"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/pinch",
+          "mode": "grab",
+          "parameters": {
+            "force_hold_threshold": "0.02",
+            "force_release_threshold": "0.01"
+          },
+          "inputs": {
+            "grab": {
+              "output": "/actions/default/in/grabpinch"
+            }
+          }
+        }
+      ],
+      "skeleton": [
+        {
+          "output": "/actions/default/in/skeletonlefthand",
+          "path": "/user/hand/left/input/skeleton/left"
+        },
+        {
+          "output": "/actions/default/in/skeletonrighthand",
+          "path": "/user/hand/right/input/skeleton/right"
+        }
+      ]
+    },
+    "/actions/platformer": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    },
+    "/actions/tabletennisset": {
+      "chords": [],
+      "poses": [
+        {
+          "output": "/actions/tabletennisset/in/pose",
+          "path": "/user/hand/left/pose/handgrip"
+        },
+        {
+          "output": "/actions/tabletennisset/in/pose",
+          "path": "/user/hand/right/pose/handgrip"
+        },
+        {
+          "output": "/actions/tabletennisset/in/pose2",
+          "path": "/user/hand/left/pose/back"
+        },
+        {
+          "output": "/actions/tabletennisset/in/pose2",
+          "path": "/user/hand/right/pose/back"
+        }
+      ],
+      "haptics": [
+        {
+          "output": "/actions/tabletennisset/out/haptic",
+          "path": "/user/hand/left/output/haptic"
+        },
+        {
+          "output": "/actions/tabletennisset/out/haptic",
+          "path": "/user/hand/right/output/haptic"
+        }
+      ],
+      "sources": [
+        {
+          "path": "/user/hand/left/input/a",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/tabletennisset/in/slowmo"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/a",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/tabletennisset/in/slowmo"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/thumbstick",
+          "mode": "dpad",
+          "parameters": {
+            "deadzone_pct": "95",
+            "overlap_pct": "0",
+            "sticky": "false",
+            "sub_mode": "touch"
+          },
+          "inputs": {
+            "east": {
+              "output": "/actions/tabletennisset/in/right"
+            },
+            "north": {
+              "output": "/actions/tabletennisset/in/up"
+            },
+            "south": {
+              "output": "/actions/tabletennisset/in/down"
+            },
+            "west": {
+              "output": "/actions/tabletennisset/in/left"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/thumbstick",
+          "mode": "dpad",
+          "parameters": {
+            "deadzone_pct": "95",
+            "overlap_pct": "0",
+            "sticky": "false",
+            "sub_mode": "touch"
+          },
+          "inputs": {
+            "east": {
+              "output": "/actions/tabletennisset/in/right"
+            },
+            "north": {
+              "output": "/actions/tabletennisset/in/up"
+            },
+            "south": {
+              "output": "/actions/tabletennisset/in/down"
+            },
+            "west": {
+              "output": "/actions/tabletennisset/in/left"
+            }
+          }
+        }
+      ],
+      "skeleton": []
+    }
+  },
+  "controller_type": "vive_tracker_handed",
+  "description": "",
+  "name": "Vive Tracker in Hand用のTableTennis [Testing]設定"
+}
