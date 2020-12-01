@@ -10,14 +10,16 @@ This is the official repository of the paper "SPinPong - Virtual Reality Table T
 ![teaser3](https://github.com/koikelab-team/SPinPong/blob/master/fig/teaser3.GIF?raw=true)
 </details>
 
+## Requirements
+- Unity
+- 1x SteamVR compatible HMD
+- 1x Controller
+
+### For greater immersion
+- 1x VIVE Tracker attached to a racket
+- audio recorder / vibrator + microcontroller for haptic feedback
 
 ## Usage
-To be updated
-
-## Pre-trained Model
-To be updated
-
-## Test Dataset
 To be updated
 
 ## Citation
