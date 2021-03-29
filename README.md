@@ -28,7 +28,7 @@ This is the official repository of the paper "SPinPong - Virtual Reality Table T
 
 If you refer to our paper or use our code, please also cite this paper and the previous work:
 ```
-TBD
+E. Wu, M. Piekenbrock, T. Nakumura and H. Koike, "SPinPong - Virtual Reality Table Tennis Skill Acquisition using Visual, Haptic and Temporal Cues," in IEEE Transactions on Visualization and Computer Graphics, doi: 10.1109/TVCG.2021.3067761.
 ```
 
 ## License
