@@ -20,7 +20,26 @@ This is the official repository of the paper "SPinPong - Virtual Reality Table T
 - audio recorder / vibrator + microcontroller for haptic feedback
 
 ## Usage
-To be updated
+### Preparation
+Place your VRHMD on the user's side of the table, as closely as possible to the edge without any overhang. See below:
+```
+ __R__  <- robot
+|  |  |
+|  |  |
+|-----| <- net
+|  |  |
+|__H__| <- user side. H: Hmd
+```
+The HMD should face towards the robot. Now calibrate SteamVR. Height: 0.76cm (normal table height).
+
+### Run
+1. Now build & run the provided Unity application. Check if the headset is correctly calibrated. Adjust its position via the coordinates of the user GameObject.
+2. You can run the different conditions via the keyboard:
+- 1: VR condition without any additional cues. Slow-mo is enabled.
+- 2: Bullet-Time. On top of cond. 1, a small window pops up showing the ball, while time is slowed down extremely.
+- 3: Guidance: On top of cond. 1, trajectory of the ball is shown with a semi-transparent racket that shows how to swing the racket for a successful return.
+- 4: Arrow: On top of cond. 1, green arrows rotate around the ball to indicate the rotation of the ball.
+- Escape: Quit applicatoin.
 
 ## Citation
 
